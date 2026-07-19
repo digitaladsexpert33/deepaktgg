@@ -266,13 +266,7 @@ src="https://www.facebook.com/tr?id=1565516498700991&ev=PageView&noscript=1"
     height: 1.4em;
   }
  
-  .cta-text-slide span {
-    display: block;
-    height: 1.4em;
-    line-height: 1.4em;
-    white-space: nowrap;
-    text-align: center;
-  }
+ 
   @keyframes textCycle {
     0%, 20%   { transform: translateY(0); }
     25%, 45%  { transform: translateY(-25%); }
@@ -281,14 +275,7 @@ src="https://www.facebook.com/tr?id=1565516498700991&ev=PageView&noscript=1"
     100%      { transform: translateY(-100%); }
   }
 
-  .cta-arrow {
-    display: inline-block;
-    font-weight: 900;
-    font-size: 1.2rem;
-    transition: transform 0.2s;
-    flex-shrink: 0;
-  }
-  .cta:hover .cta-arrow { transform: translateX(5px); }
+  
 
   /* Countdown strip */
   .countdown-strip {
@@ -493,9 +480,9 @@ src="https://www.facebook.com/tr?id=1565516498700991&ev=PageView&noscript=1"
             <span>Get Free Access Today</span>
             
            
-          </div>
+          
         </div>
-        <span class="cta-arrow">→</span>
+       
       </a>
     </div>
 
@@ -658,7 +645,7 @@ src="https://www.facebook.com/tr?id=1565516498700991&ev=PageView&noscript=1"
   if (ctaBtn) {
     ctaBtn.addEventListener('click', function() {
       if (typeof fbq === 'function') {
-        fbq('track', 'Lead');
+        fbq('track', 'Subscribe');
       }
     });
   }
